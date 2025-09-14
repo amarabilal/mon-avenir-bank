@@ -4,4 +4,3 @@ coverage/
 .env
 .env.*
 .DS_Store
-pnpm-lock.yaml
