@@ -1,0 +1,22 @@
+name: Feature
+description: User story à implémenter
+title: "US: "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: story
+    attributes:
+      label: User story
+      description: "En tant que <rôle>, je veux <besoin> afin de <valeur>."
+      placeholder: "En tant que client..."
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critères d’acceptation
+      value: "- [ ] ..."
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        ["domain", "application", "interface", "infrastructure", "frontend"]

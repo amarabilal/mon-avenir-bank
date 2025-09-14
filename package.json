@@ -1,0 +1,42 @@
+{
+  "name": "mon-avenir-bank",
+  "private": true,
+  "packageManager": "pnpm@10.15.1",
+  "scripts": {
+    "dev:fastify": "pnpm --filter @monavenir/interface-http-fastify dev",
+    "lint": "eslint . --ext .ts,.tsx --max-warnings=0",
+    "format": "prettier -w .",
+    "typecheck": "tsc -p tsconfig.base.json --noEmit",
+    "test": "jest --passWithNoTests",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.12",
+    "@typescript-eslint/eslint-plugin": "^8.43.0",
+    "@typescript-eslint/parser": "^8.43.0",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "globals": "^16.4.0",
+    "husky": "^9.1.0",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js}": [
+      "eslint --fix",
+      "prettier -w"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "prettier -w"
+    ]
+  },
+  "type": "module"
+}

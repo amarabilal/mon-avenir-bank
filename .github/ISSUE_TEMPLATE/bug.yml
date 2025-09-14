@@ -1,0 +1,22 @@
+name: Bug
+description: Rapport de bug
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportement attendu
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportement observé
+  - type: textarea
+    id: steps
+    attributes:
+      label: Étapes pour reproduire
+      value: "1. ...\n2. ...\n3. ..."
+  - type: input
+    id: env
+    attributes:
+      label: Environnement (OS, Node, pnpm)
