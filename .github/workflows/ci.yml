@@ -14,8 +14,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 20, cache: "pnpm" }
       - run: pnpm install --frozen-lockfile
-      - run: pnpm -r run -c format --check=false
-      - run: pnpm lint || true
+      - run: pnpm lint
 
   typecheck:
     name: ci/typecheck
