@@ -1,0 +1,13 @@
+{
+  "name": "@monavenir/interface-http-fastify",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/server.ts"
+  },
+  "dependencies": {
+    "fastify": "^4.28.1",
+    "@monavenir/application": "workspace:*"
+  }
+}
