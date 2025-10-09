@@ -7,6 +7,12 @@
   "types": "src/index.ts",
   "dependencies": {
     "@monavenir/application": "workspace:*",
-    "@monavenir/domain": "workspace:*"
+    "@monavenir/domain": "workspace:*",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/bcryptjs": "^2.4.6"
   }
 }
