@@ -1,13 +1,16 @@
 {
   "name": "@monavenir/interface-http-fastify",
-  "version": "0.0.1",
-  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "tsx src/server.ts"
+    "dev": "tsx src/server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "fastify": "^4.28.1",
-    "@monavenir/application": "workspace:*"
+    "fastify": "^4.29.1",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "@monavenir/application": "workspace:*",
+    "@monavenir/infrastructure": "workspace:*"
   }
 }
